@@ -21,6 +21,14 @@ interface FormData {
   message: string
 }
 
+function getTodayDateString(): string {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null)
   const [submitted, setSubmitted] = useState(false)
@@ -49,9 +57,21 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
+  const todayStr = getTodayDateString()
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setErrorMsg(null)
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+    const { name, value } = e.target
+
+    if (name === 'eventDate' && value) {
+      if (value < todayStr) {
+        setErrorMsg('Please select a current or upcoming date for your event.')
+        setForm((prev) => ({ ...prev, eventDate: '' }))
+        return
+      }
+    }
+
+    setForm((prev) => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = (e: FormEvent) => {
@@ -66,6 +86,10 @@ export default function Contact() {
     }
     if (!form.eventType) {
       setErrorMsg('Please select an event type.')
+      return
+    }
+    if (form.eventDate && form.eventDate < todayStr) {
+      setErrorMsg('Event date cannot be in the past. Please select an upcoming date.')
       return
     }
 
@@ -248,15 +272,24 @@ export default function Contact() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="eventDate" className="block text-white/60 text-xs uppercase tracking-wider mb-1.5">Event Date</label>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <label htmlFor="eventDate" className="block text-white/60 text-xs uppercase tracking-wider">
+                          Event Date
+                        </label>
+                        <span className="text-[#D6B46A]/80 text-[10px] tracking-wider uppercase font-medium">
+                          Upcoming dates
+                        </span>
+                      </div>
                       <input
                         id="eventDate"
                         name="eventDate"
                         type="date"
+                        min={todayStr}
                         value={form.eventDate}
                         onChange={handleChange}
                         className={inputClass}
                         style={{ colorScheme: 'dark' }}
+                        aria-label="Event Date (current or future dates only)"
                       />
                     </div>
                   </div>
