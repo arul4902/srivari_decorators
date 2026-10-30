@@ -1,0 +1,37 @@
+{
+  "name": "srivari_decorators",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node --experimental-strip-types server/index.ts",
+    "dev:all": "node --experimental-strip-types server/index.ts & vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "server": "node --experimental-strip-types server/index.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "framer-motion": "^14.9.0",
+    "lucide-react": "^1.65.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.5"
+  }
+}
