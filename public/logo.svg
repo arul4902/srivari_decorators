@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Royal Plum to Deep Purple Background -->
+    <radialGradient id="svMedallion" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#8412B8" />
+      <stop offset="35%" stop-color="#52007A" />
+      <stop offset="70%" stop-color="#27002F" />
+      <stop offset="100%" stop-color="#14001A" />
+    </radialGradient>
+
+    <!-- Warm Magenta Glow Accent -->
+    <radialGradient id="svMagentaGlow" cx="72%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#E50065" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#E50065" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Champagne Gold Gradient -->
+    <linearGradient id="svGold" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFF6DD" />
+      <stop offset="22%" stop-color="#E8CA82" />
+      <stop offset="48%" stop-color="#D6B46A" />
+      <stop offset="75%" stop-color="#AC8131" />
+      <stop offset="90%" stop-color="#E0C178" />
+      <stop offset="100%" stop-color="#FFF9EA" />
+    </linearGradient>
+
+    <!-- Deep Gold for Shadow/Bevel -->
+    <linearGradient id="svGoldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6B46A" />
+      <stop offset="50%" stop-color="#9C7124" />
+      <stop offset="100%" stop-color="#5E400B" />
+    </linearGradient>
+
+    <!-- Magenta / Celebration Ribbon Gradient -->
+    <linearGradient id="svMagentaRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4092" />
+      <stop offset="50%" stop-color="#E50065" />
+      <stop offset="100%" stop-color="#9B0042" />
+    </linearGradient>
+
+    <!-- Soft Celebration Aura -->
+    <filter id="svGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Circular Crest Background -->
+  <circle cx="256" cy="256" r="246" fill="url(#svMedallion)" />
+  <circle cx="256" cy="256" r="246" fill="url(#svMagentaGlow)" />
+
+  <!-- Outer Luxury Gold Rim -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#svGold)" stroke-width="4.5" />
+
+  <!-- Beaded Filigree Inner Ring -->
+  <circle cx="256" cy="256" r="226" fill="none" stroke="url(#svGold)" stroke-width="1.8" stroke-dasharray="4 7" stroke-linecap="round" opacity="0.85" />
+  
+  <!-- Fine Inner Hairline Border -->
+  <circle cx="256" cy="256" r="216" fill="none" stroke="url(#svGold)" stroke-width="1.2" opacity="0.5" />
+
+  <!-- 4 Cardinal Decorative Gold Diamonds -->
+  <!-- North -->
+  <path d="M 256 18 L 262 26 L 256 34 L 250 26 Z" fill="url(#svGold)" />
+  <circle cx="256" cy="26" r="1.8" fill="#E50065" />
+  <!-- South -->
+  <path d="M 256 478 L 262 486 L 256 494 L 250 486 Z" fill="url(#svGold)" />
+  <circle cx="256" cy="486" r="1.8" fill="#E50065" />
+  <!-- West -->
+  <path d="M 18 256 L 26 250 L 34 256 L 26 262 Z" fill="url(#svGold)" />
+  <circle cx="26" cy="256" r="1.8" fill="#E50065" />
+  <!-- East -->
+  <path d="M 478 256 L 486 250 L 494 256 L 486 262 Z" fill="url(#svGold)" />
+  <circle cx="486" cy="256" r="1.8" fill="#E50065" />
+
+  <!-- 4 Diagonal Accent Stars -->
+  <circle cx="93" cy="93" r="2.5" fill="url(#svGold)" opacity="0.8" />
+  <circle cx="419" cy="93" r="2.5" fill="url(#svGold)" opacity="0.8" />
+  <circle cx="93" cy="419" r="2.5" fill="url(#svGold)" opacity="0.8" />
+  <circle cx="419" cy="419" r="2.5" fill="url(#svGold)" opacity="0.8" />
+
+  <!-- Upper Royal Celebration Mandap Arch -->
+  <path d="M 160 162 C 176 114, 212 90, 256 90 C 300 90, 336 114, 352 162" 
+        fill="none" stroke="url(#svGold)" stroke-width="2.5" stroke-linecap="round" opacity="0.75" />
+  <path d="M 184 162 C 196 128, 224 108, 256 108 C 288 108, 316 128, 328 162" 
+        fill="none" stroke="url(#svGold)" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.6" />
+
+  <!-- Mandap Crown Apex Ornament -->
+  <path d="M 256 64 L 260 76 L 272 80 L 260 84 L 256 96 L 252 84 L 240 80 L 252 76 Z" 
+        fill="url(#svGold)" filter="url(#svGlow)" />
+  <circle cx="256" cy="80" r="2.5" fill="#FFFDF8" />
+
+  <!-- Auspicious Lotus Base Pedestal (Event Staging & Tradition) -->
+  <g id="lotus-pedestal" transform="translate(0, 10)">
+    <!-- Central Lotus Petal -->
+    <path d="M 256 426 C 248 406, 252 388, 256 376 C 260 388, 264 406, 256 426 Z" 
+          fill="url(#svGold)" />
+    <!-- Left Inner Petal -->
+    <path d="M 256 426 C 242 410, 232 396, 236 384 C 244 394, 252 410, 256 426 Z" 
+          fill="url(#svGold)" opacity="0.9" />
+    <!-- Right Inner Petal -->
+    <path d="M 256 426 C 270 410, 280 396, 276 384 C 268 394, 260 410, 256 426 Z" 
+          fill="url(#svGold)" opacity="0.9" />
+    <!-- Left Outer Wing -->
+    <path d="M 256 426 C 230 422, 214 408, 218 398 C 230 406, 246 418, 256 426 Z" 
+          fill="url(#svGold)" opacity="0.75" />
+    <!-- Right Outer Wing -->
+    <path d="M 256 426 C 282 422, 298 408, 294 398 C 282 406, 266 418, 256 426 Z" 
+          fill="url(#svGold)" opacity="0.75" />
+    <!-- Pedestal Base Bar -->
+    <path d="M 226 430 Q 256 434 286 430" stroke="url(#svGold)" stroke-width="2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Left Floral Garland Bough -->
+  <g id="left-bough" opacity="0.85">
+    <path d="M 195 408 C 160 385, 136 340, 136 280 C 136 242, 146 206, 166 176" 
+          fill="none" stroke="url(#svGold)" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Leaf Clusters -->
+    <path d="M 148 356 C 134 350, 126 338, 130 334 C 138 338, 144 348, 148 356 Z" fill="url(#svGold)" />
+    <path d="M 137 298 C 122 294, 116 282, 122 278 C 128 282, 133 290, 137 298 Z" fill="url(#svGold)" />
+    <path d="M 144 240 C 132 232, 128 220, 134 216 C 140 220, 143 230, 144 240 Z" fill="url(#svGold)" />
+    <path d="M 160 190 C 150 180, 148 168, 154 164 C 158 170, 160 180, 160 190 Z" fill="url(#svGold)" />
+  </g>
+
+  <!-- Right Floral Garland Bough -->
+  <g id="right-bough" opacity="0.85">
+    <path d="M 317 408 C 352 385, 376 340, 376 280 C 376 242, 366 206, 346 176" 
+          fill="none" stroke="url(#svGold)" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Leaf Clusters -->
+    <path d="M 364 356 C 378 350, 386 338, 382 334 C 374 338, 368 348, 364 356 Z" fill="url(#svGold)" />
+    <path d="M 375 298 C 390 294, 396 282, 390 278 C 384 282, 379 290, 375 298 Z" fill="url(#svGold)" />
+    <path d="M 368 240 C 380 232, 384 220, 378 216 C 372 220, 369 230, 368 240 Z" fill="url(#svGold)" />
+    <path d="M 352 190 C 362 180, 364 168, 358 164 C 354 170, 352 180, 352 190 Z" fill="url(#svGold)" />
+  </g>
+
+  <!-- Intertwined "D" Ribbon (Decorators) in Rich Magenta -->
+  <!-- Sweeps from center top out to the right and back into the center base -->
+  <path d="M 252 178 C 298 172, 338 206, 338 258 C 338 310, 296 344, 250 340" 
+        fill="none" stroke="url(#svMagentaRibbon)" stroke-width="5" stroke-linecap="round" opacity="0.9" />
+  <path d="M 252 184 C 292 180, 328 210, 328 258 C 328 304, 292 336, 252 334" 
+        fill="none" stroke="#FFA3CA" stroke-width="1.5" stroke-linecap="round" opacity="0.65" />
+
+  <!-- Grand Serif "S" Monogram (Srivari) -->
+  <!-- Handcrafted luxury serif letterform with rich calligraphic stroke contrast -->
+  <g id="monogram-S">
+    <!-- Drop Shadow for depth -->
+    <path d="M 206 208 C 206 182, 226 156, 260 156 C 288 156, 310 172, 310 196 C 310 220, 292 234, 264 246 C 230 262, 198 280, 198 316 C 198 350, 226 370, 264 370 C 298 370, 322 352, 322 328 L 306 326 C 304 344, 286 356, 262 356 C 238 356, 218 342, 218 318 C 218 296, 238 280, 270 264 C 304 248, 330 230, 330 196 C 330 162, 300 142, 258 142 C 216 142, 186 166, 186 206 Z" 
+          fill="#120017" opacity="0.5" transform="translate(2, 3)" />
+
+    <!-- Main Golden Serif S -->
+    <path d="M 206 208 C 206 182, 226 156, 260 156 C 288 156, 310 172, 310 196 C 310 220, 292 234, 264 246 C 230 262, 198 280, 198 316 C 198 350, 226 370, 264 370 C 298 370, 322 352, 322 328 L 306 326 C 304 344, 286 356, 262 356 C 238 356, 218 342, 218 318 C 218 296, 238 280, 270 264 C 304 248, 330 230, 330 196 C 330 162, 300 142, 258 142 C 216 142, 186 166, 186 206 Z" 
+          fill="url(#svGold)" />
+
+    <!-- Top Serif Teardrop Finial -->
+    <circle cx="196" cy="204" r="9" fill="url(#svGold)" />
+    <circle cx="196" cy="204" r="5" fill="#FFF6DD" />
+
+    <!-- Bottom Serif Teardrop Finial -->
+    <circle cx="316" cy="326" r="9" fill="url(#svGold)" />
+    <circle cx="316" cy="326" r="5" fill="#FFF6DD" />
+
+    <!-- Shimmer Spine Highlight -->
+    <path d="M 258 146 C 286 146, 316 160, 316 194 C 316 222, 292 238, 264 252 C 244 262, 228 274, 218 290" 
+          fill="none" stroke="#FFFDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+  </g>
+
+  <!-- Celebration Sparkles -->
+  <!-- Top Right Sparkle -->
+  <g transform="translate(324, 184)">
+    <path d="M 0 -10 Q 0 0 10 0 Q 0 0 0 10 Q 0 0 -10 0 Q 0 0 0 -10 Z" fill="url(#svGold)" filter="url(#svGlow)" />
+    <circle cx="0" cy="0" r="1.5" fill="#FFFDF8" />
+  </g>
+  <!-- Lower Left Sparkle -->
+  <g transform="translate(186, 334)">
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="url(#svGold)" filter="url(#svGlow)" />
+    <circle cx="0" cy="0" r="1.2" fill="#FFFDF8" />
+  </g>
+  <!-- Mini Diamond Star -->
+  <g transform="translate(256, 126)">
+    <path d="M 0 -6 Q 0 0 6 0 Q 0 0 0 6 Q 0 0 -6 0 Q 0 0 0 -6 Z" fill="#FFF9EA" />
+  </g>
+</svg>

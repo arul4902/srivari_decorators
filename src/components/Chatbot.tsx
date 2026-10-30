@@ -259,8 +259,8 @@ export default function Chatbot() {
             }}
           >
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#7200A8] to-[#E50065] flex items-center justify-center flex-shrink-0 shadow-md">
-                <Sparkles size={16} className="text-[#D6B46A]" />
+              <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 shadow-md ring-1 ring-[#D6B46A]/30">
+                <img src="/logo.svg" alt="Srivari Decorators" className="w-full h-full object-contain" />
               </div>
               <div>
                 <p className="text-white font-semibold text-sm leading-tight flex items-center gap-1.5">
@@ -367,8 +367,8 @@ export default function Chatbot() {
             {messages.map((msg) => (
               <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'assistant' && (
-                  <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#7200A8] to-[#E50065] flex items-center justify-center flex-shrink-0 mr-2 mt-0.5 shadow-sm">
-                    <Sparkles size={11} className="text-[#D6B46A]" />
+                  <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 mr-2 mt-0.5 shadow-sm ring-1 ring-[#D6B46A]/20">
+                    <img src="/logo.svg" alt="Srivari Assistant" className="w-full h-full object-contain" />
                   </div>
                 )}
                 <div style={{ maxWidth: '82%' }}>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Sparkles } from 'lucide-react'
+import Logo from './Logo'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -65,16 +66,10 @@ export default function Navigation() {
         <a
           href="#home"
           onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
-          className="flex items-center gap-2.5 group"
+          className="flex items-center group py-1"
           aria-label="Srivari Decorators – Home"
         >
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#7200A8] to-[#E50065] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <Sparkles size={18} className="text-[#D6B46A]" />
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-serif text-white font-semibold text-lg tracking-wide">Srivari</span>
-            <span className="text-[#D6B46A] text-[10px] tracking-[0.2em] uppercase font-light">Decorators</span>
-          </div>
+          <Logo size="md" />
         </a>
 
         {/* Desktop links */}

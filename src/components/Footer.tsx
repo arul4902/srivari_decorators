@@ -1,4 +1,5 @@
-import { Sparkles, MapPin, Phone, ArrowRight } from 'lucide-react'
+import { MapPin, Phone, ArrowRight } from 'lucide-react'
+import Logo from './Logo'
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -34,15 +35,9 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1 flex flex-col gap-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#7200A8] to-[#E50065] flex items-center justify-center">
-                <Sparkles size={17} className="text-[#D6B46A]" />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-serif text-white font-semibold text-lg">Srivari</span>
-                <span className="text-[#D6B46A] text-[10px] tracking-[0.2em] uppercase">Decorators</span>
-              </div>
-            </div>
+            <a href="#home" className="inline-flex items-center group">
+              <Logo size="md" />
+            </a>
             <p className="text-white/45 text-sm leading-relaxed max-w-[220px]">
               Coimbatore's trusted event planning, decoration, sound and catering specialists.
             </p>
