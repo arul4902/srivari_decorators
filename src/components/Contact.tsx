@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, type FormEvent } from 'react'
 import { MapPin, Phone, Send, CheckCircle } from 'lucide-react'
 
-const WA_NUMBER = '919585170410'
+const WA_NUMBER = '919003607680'
 
 const eventTypes = [
   'Wedding',
@@ -138,7 +138,7 @@ export default function Contact() {
 
               {/* Phone */}
               <a
-                href="tel:+919585170410"
+                href="tel:+919003607680"
                 className="flex items-center gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#D6B46A]/30 transition-all duration-300 group"
                 aria-label="Call Srivari Decorators"
               >
@@ -147,7 +147,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-white/50 text-xs uppercase tracking-wider mb-1">Phone / WhatsApp</p>
-                  <p className="text-white font-semibold">+91 95851 70410</p>
+                  <p className="text-white font-semibold">+91 90036 07680</p>
                 </div>
               </a>
 

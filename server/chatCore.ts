@@ -5,7 +5,7 @@ export const SYSTEM_INSTRUCTION = `You are "Srivari AI Assistant", the official 
 BUSINESS CONTEXT:
 - Business: Srivari Decorators
 - Location: Thiruvalluvar Nagar, Thadagam Road, Coimbatore – 641108
-- Phone / WhatsApp: +91 95851 70410
+- Phone / WhatsApp: +91 90036 07680
 - Instagram: @srivari_decorators (https://www.instagram.com/srivari_decorators/)
 - Core Divisions:
   1. Event Planning & Decorations (Stage styling, floral backdrops, theme arches, mandap decoration, entrance decor)
@@ -17,7 +17,7 @@ COMMUNICATION STYLE:
 - Keep answers concise (2-4 sentences max), conversational, and actionable
 - End with a natural next step or question to help them plan
 - Greet gracefully in English or Tamil ("Vanakkam", "Namaste")
-- Never quote rigid prices or guarantee calendar slots without team confirmation. Always invite them to WhatsApp/call (+91 95851 70410) for exact quotes.
+- Never quote rigid prices or guarantee calendar slots without team confirmation. Always invite them to WhatsApp/call (+91 90036 07680) for exact quotes.
 
 PROGRESSIVE INQUIRY CAPTURE:
 When the visitor mentions an event, help gather:
@@ -70,22 +70,22 @@ export function generateIntelligentEventReply(message: string): string {
 
   // Pricing & Budget
   if (lower.includes('price') || lower.includes('cost') || lower.includes('rate') || lower.includes('package') || lower.includes('budget') || lower.includes('how much') || lower.includes('charge')) {
-    return "Every event is custom-designed according to your stage dimensions, floral selections, lighting requirements, and guest count. Our team provides fast, transparent customized quotes! You can chat with us directly on WhatsApp at +91 95851 70410 to discuss your budget."
+    return "Every event is custom-designed according to your stage dimensions, floral selections, lighting requirements, and guest count. Our team provides fast, transparent customized quotes! You can chat with us directly on WhatsApp at +91 90036 07680 to discuss your budget."
   }
 
   // Contact / Address / Location
   if (lower.includes('contact') || lower.includes('phone') || lower.includes('number') || lower.includes('address') || lower.includes('location') || lower.includes('where') || lower.includes('office') || lower.includes('thadagam') || lower.includes('coimbatore')) {
-    return "You can reach Srivari Decorators directly:\n📍 Thiruvalluvar Nagar, Thadagam Road, Coimbatore – 641108\n📞 Phone & WhatsApp: +91 95851 70410\n📸 Instagram: @srivari_decorators\nWould you like to speak with our planner right away?"
+    return "You can reach Srivari Decorators directly:\n📍 Thiruvalluvar Nagar, Thadagam Road, Coimbatore – 641108\n📞 Phone & WhatsApp: +91 90036 07680\n📸 Instagram: @srivari_decorators\nWould you like to speak with our planner right away?"
   }
 
   // Dates & Availability
   if (/\b(january|february|march|april|may|june|july|august|september|october|november|december|date|dates|availab|slot)\b/i.test(lower)) {
-    return "Thank you for sharing your date! Popular auspicious dates book quickly in Coimbatore. Please click below to send your details directly via WhatsApp at +91 95851 70410 so our team can immediately check and reserve your slot."
+    return "Thank you for sharing your date! Popular auspicious dates book quickly in Coimbatore. Please click below to send your details directly via WhatsApp at +91 90036 07680 so our team can immediately check and reserve your slot."
   }
 
   // Name or Contact details given
   if (/\b[6-9]\d{9}\b/.test(lower) || lower.includes('my name is') || lower.includes('i am')) {
-    return "Thank you so much! I have captured your details in your Event Card. Click the WhatsApp button below to instantly connect with our lead designer at +91 95851 70410 and finalize your decor plan."
+    return "Thank you so much! I have captured your details in your Event Card. Click the WhatsApp button below to instantly connect with our lead designer at +91 90036 07680 and finalize your decor plan."
   }
 
   return "Thank you for reaching out! Srivari Decorators provides complete Event Planning & Styling, Sound & Lighting, and Catering across Coimbatore. Could you tell me a little about the celebration you're planning?"

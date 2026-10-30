@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const WA_NUMBER = '919585170410'
+const WA_NUMBER = '919003607680'
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false)

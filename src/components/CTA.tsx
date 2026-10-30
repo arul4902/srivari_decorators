@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Phone } from 'lucide-react'
 
-const WA_NUMBER = '919585170410'
+const WA_NUMBER = '919003607680'
 
 export default function CTA() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -28,7 +28,7 @@ export default function CTA() {
   }
 
   const handleCall = () => {
-    window.location.href = 'tel:+919585170410'
+    window.location.href = 'tel:+919003607680'
   }
 
   return (

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { X, Send, Sparkles, ChevronDown, Phone, Calendar, MapPin, Users, User, Tag } from 'lucide-react'
 
-const WA_NUMBER = '919585170410'
+const WA_NUMBER = '919003607680'
 
 type Role = 'user' | 'assistant'
 
@@ -186,7 +186,7 @@ export default function Chatbot() {
       } else if (lower.includes('cater') || lower.includes('food')) {
         fallbackText = "Srivari Caterings delivers authentic traditional South Indian banana-leaf feasts as well as multi-cuisine buffets. Approximately how many guests will you be hosting?"
       } else if (lower.includes('contact') || lower.includes('phone') || lower.includes('address')) {
-        fallbackText = "You can reach Srivari Decorators directly:\n📍 Thiruvalluvar Nagar, Thadagam Road, Coimbatore – 641108\n📞 Phone & WhatsApp: +91 95851 70410\n📸 Instagram: @srivari_decorators"
+        fallbackText = "You can reach Srivari Decorators directly:\n📍 Thiruvalluvar Nagar, Thadagam Road, Coimbatore – 641108\n📞 Phone & WhatsApp: +91 90036 07680\n📸 Instagram: @srivari_decorators"
       }
       updateMessage(typingId, fallbackText)
     } finally {
@@ -428,10 +428,10 @@ export default function Chatbot() {
           {/* Direct call & WhatsApp bar */}
           <div className="px-3.5 pb-2.5 flex gap-2 flex-shrink-0">
             <a
-              href="tel:+919585170410"
+              href="tel:+919003607680"
               className="flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-medium text-white/70 hover:text-white border border-white/10 hover:border-white/20 transition-all"
             >
-              <Phone size={12} className="text-[#D6B46A]" /> Call +91 95851 70410
+              <Phone size={12} className="text-[#D6B46A]" /> Call +91 90036 07680
             </a>
             <button
               onClick={handleWhatsAppEnquiry}

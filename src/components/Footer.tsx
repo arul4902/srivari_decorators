@@ -98,12 +98,12 @@ export default function Footer() {
                 </p>
               </div>
               <a
-                href="tel:+919585170410"
+                href="tel:+919003607680"
                 className="flex items-center gap-3 text-white/45 hover:text-[#D6B46A] text-sm transition-colors"
-                aria-label="Call +91 95851 70410"
+                aria-label="Call +91 90036 07680"
               >
                 <Phone size={15} className="text-[#D6B46A] flex-shrink-0" />
-                +91 95851 70410
+                +91 90036 07680
               </a>
             </div>
           </div>

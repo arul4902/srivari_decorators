@@ -35,7 +35,7 @@ const services = [
   },
 ]
 
-const WA_NUMBER = '919585170410'
+const WA_NUMBER = '919003607680'
 
 export default function Services() {
   const sectionRef = useRef<HTMLElement>(null)
